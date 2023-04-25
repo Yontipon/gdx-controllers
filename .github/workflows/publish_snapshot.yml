@@ -21,7 +21,7 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Setup Android build environment
-      uses: android-actions/setup-android@v2.0.2
+      uses: android-actions/setup-android@v2
     - name: Build Android
       run: ./gradlew clean :test:android:buildDebug
     - name: Build Desktop
